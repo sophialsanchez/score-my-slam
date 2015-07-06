@@ -1,0 +1,52 @@
+{% extends 'slam/base.html' %}
+
+{% block content %}
+<div class="start">
+	<div class="round">
+		<p class="create-slam-title">{{ slam.instance.slam_name }}</p>
+		<p>Round 1</p>
+		<br>
+		<p class="view-leaderboard">View Leaderboard</p>
+		<div class="leaderboard">
+		<p class="hide-leaderboard">Hide Leaderboard</p>
+		lalalala EVERYONE IS A WINNER</div>
+		<div class="poet-scores">
+<ol id="sortable">
+  <li><form action="/slam/final/" method="post">
+  		{% csrf_token %}
+  		<div class="name">{{ slam.instance.poet_1 }}</div>
+  		<div class="score">
+			{{ form.as_table }}
+			<input type="submit" value="Add scores">
+  		</div>
+  		</form></li>
+  		
+    <li><form action="/slam/final/" method="post">
+  		{% csrf_token %}
+  		<div class="name">{{ slam.instance.poet_2 }}</div>
+  		<div class="score">
+			{{ form.as_table }}
+			<input type="submit" value="Add scores">
+  		</div>
+  		</form></li>
+  		
+    <li><form action="/slam/final/" method="post">
+  		{% csrf_token %}
+  		<div class="name">{{ slam.instance.poet_3 }}</div>
+  		<div class="score">
+			{{ form.as_table }}
+			<input type="submit" value="Add scores">
+  		</div>
+  		</form></li>
+
+
+</ol>
+		<p><a href="/slam/final/">GO TO FINAL RESULTS</a></p>
+		</ul>
+		<form>
+		</form>
+	</div>
+
+</div>
+</div>
+{% endblock content %}

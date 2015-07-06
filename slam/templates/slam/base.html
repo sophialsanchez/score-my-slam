@@ -1,0 +1,106 @@
+{% load staticfiles %}
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="{% static 'slam/style.css' %}" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'slam/jquery-ui-1.11.4.custom/jquery-ui.min.css' %}">
+<script src="{% static 'slam/jquery-ui-1.11.4.custom/external/jquery/jquery.js' %}"></script>
+<script src="{% static 'slam/jquery-ui-1.11.4.custom/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'slam/main.js' %}"></script>
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Score My Slam</title>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<div class="header">
+	<div class="logo" id="logo">
+		<h1><a href="/slam">Score My Slam</a></h1>
+	</div>
+	<div class="navbar-rt" id="navbar-rt">
+		<ul class="navbar">
+		<li>
+			<a href="#slam-rules">Slam Rules</a>
+		</li>
+		<li>
+			<a href="#find-a-slam">Find A Slam</a>
+		</li>
+		<li>
+			<a href="#about">About</a>
+		</li>
+		</ul>
+	</div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<div class="slam-rules" id="slam-rules">
+<h2>Slam Rules</h2>
+<br>
+<p1>A slam is a competition between poets, usually played in a series of 3 "bouts." During 
+each bout, poets are scored by judges in the audience on a scale of 0.0 to 10.0. A 0 means 
+that if you could go back in time to any moment in your life to prevent it from happening, it 
+would be to stop yourself from listening to that poem. A 10 means that listening to this poem 
+is the best thing that has ever happened to you in your entire life. Ever.</p1>
+<br>
+<br>
+<img src="{% static 'slam/judges.jpg' %}">
+<br>
+<br>
+<p1>There aren't many rules surrounding the poet's content. However, poets generally cannot 
+use props or costumes, and the poem performed must be the poet's own work. Lastly, poems 
+should last no more than 3 minutes, with a 10 second grace-period. Poets who go over that time 
+limit will be penalized half a point for each additional 10 seconds he or she uses.</p1>
+<br>
+<br>
+<p1>After each round, the highest and lowest scores for each poet are dropped, and an average 
+of the remaining scores is calculated. At the end of the final round, the poet with the highest 
+overall score is declared the winner, with the highest individual score serving as a tie-breaker.</p1>
+
+</div>
+
+<div class="find-a-slam" id="find-a-slam">
+<h2>Find a Slam</h2>
+<br>
+<p>Poetry is cool! Come watch or participate in a slam in your area.</p>
+
+<div style="overflow: hidden; border-bottom: 7px solid white;border-top: 7px solid white; margin: 15px auto; max-width: 736px">
+<iframe scrolling="no" src="http://www.poetryslam.com/map#leaflet-ma" style="border: 0px none; margin-left: -35px; height: 710px; margin-top: -340px; width: 805px;">
+</iframe>
+</div>
+<p>Map and data taken from <a href="http://www.poetryslam.com/map" style="color: white;">Poetry Slam, Inc.</a></p>
+
+<br>
+<br>
+
+
+<div class="about" id="about">
+<h2>About</h2>
+<br>
+<p1>Slams are meant to be fun. Though scoring is important to any competition, I made this 
+app to help streamline slams and promote poetry. Love it? Hate it? Got some feedback? 
+Please let me know at <b><a href="mailto:sophia@scoremyslam.com" style="text-decoration:none;color: white;">sophia@scoremyslam.com</a> </b></p1>
+<br>
+<br>
+<p1>This project was created using Python/Django, HTML/CSS/JQuery, and the Google Maps API.</p1>
+<br>
+<br>
+</div>
+
+<div class="quote">
+	<p>Poetry is when an emotion has found its thought and the thought has found words. - Robert Frost</p>
+</div>
+</body>
+</html>

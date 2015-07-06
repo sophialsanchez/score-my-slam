@@ -1,0 +1,237 @@
+body {
+	background-image: url("homepage_banner_image.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: black;
+	margin: 0;
+}
+
+h1 {
+	color:white;
+	display: inline;
+	margin-left: 10px;
+	font-family: tahoma;
+}
+
+img {
+	width: 25%;
+	display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+h1>a {
+	text-decoration: none;
+	color: white; 
+}
+
+.quote {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	position: fixed;
+	margin-top: 0;
+	margin-bottom: 0;
+	bottom: -0px;
+	background-color: black;
+}
+
+.start {
+	height:100vh;
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+.slam-form {
+	font-family: tahoma;
+	color: white;
+	font-size: 25px;
+	background: rgba(124, 115, 115, .6);
+	padding: 15px;
+	width: 80%;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: none;
+}
+
+.start>p {
+	font-family: tahoma;
+	width: 150px;
+	margin: 0 auto;
+	color: white;
+	font-size: 25px;
+	background: rgba(124, 115, 115, .6);
+	border: white;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+#start-slam-button {
+	margin-top: 225px;
+
+}
+#start-slam-button:hover {
+	background: rgba(124, 115, 115, .9);
+
+}
+
+p {
+	margin: 0;
+	text-align: center;
+	font-size: 20px;
+	color:white;
+}
+.navbar>li>a {
+	color: white;
+	font-family: tahoma;
+	font-size: 20px;
+	margin:20px;
+	text-decoration: none;
+}
+
+.navbar>li>a:hover {
+	color: gray;
+}
+
+
+.navbar>li {
+	display: inline;
+}
+
+
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo {
+	display: inline;
+}
+
+.header {
+height: 55px;
+line-height: 55px;
+border-bottom: 2px solid white;
+}
+
+#navbar-rt {
+	display: inline;
+	float: right;
+}
+
+.create-slam-title {
+	font-size: 40px;
+}
+
+.add-poet {
+	display: inline;
+	font-size: 20px;
+	text-align: center;
+}
+
+.add-poet:hover {
+	color: #66CD00;
+}
+
+.remove-poet {
+	display: inline;
+	font-size: 20px;
+	text-align: center;
+}
+
+.remove-poet:hover {
+	color: red;
+}
+
+.round {
+	font-family: tahoma;
+	color: white;
+	font-size: 25px;
+	background: rgba(124, 115, 115, .6);
+	padding: 15px;
+	width: 80%;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.poet-scores {
+	text-align: left;
+}
+
+#id_score_1, #id_score_2, #id_score_3, #id_score_4, #id_score_5, .score input[type="text"] {
+  padding: 10px;
+  width: 50px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  margin:10px;
+}
+
+#id_score_1, #id_score_2, #id_score_3, #id_score_4, #id_score_5, .score input[type="text"], textarea {
+	background-color: rgba(233, 158, 82, .9);
+}
+
+#id_score_1, #id_score_2, #id_score_3, #id_score_4, #id_score_5, .score input[type="text"]:focus,
+#id_score_1, #id_score_2, #id_score_3, #id_score_4, #id_score_5, .score input[type="text"].focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+[for="id_score_1"], [for="id_score_2"], [for="id_score_3"], [for="id_score_4"], [for="id_score_5"]{
+	display: none;
+}
+
+.name {
+	display: inline-block;
+	width: 200px;
+}
+
+.score {
+	display: inline;
+	position: relative;
+	margin-left: 100px;
+}
+
+.leaderboard {
+	display: none;
+	border-bottom: 2px solid white;
+
+}
+
+.hide-leaderboard {
+	display: none;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	font-size: 35px;
+	color:white;
+	font-family: tahoma;
+}
+
+p1 {
+	text-align: left;
+	margin: 0;
+	font-size: 20px;
+	color:white;
+}
+
+.slam-rules {
+	background-color: #2C3539;
+	padding: 15px;
+}
+
+.find-a-slam {
+	background-color: black;
+	padding: 15px;
+}
+
+.about {
+	background-color: #398B8D;
+	padding: 15px;
+}
