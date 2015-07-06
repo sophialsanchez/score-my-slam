@@ -1,0 +1,30 @@
+{% extends 'slam/base.html' %}
+
+{% block content %}
+<div class="start">
+	<div class="round">
+		<p class="create-slam-title">{{ slam.instance.slam_name }}</p>
+		<p>FINAL RESULTS</p>
+		<br>
+
+		<div class="poet-scores">
+		<p>The winner is: Person's Name!
+		<br>
+		<br>
+		{{ form.instance.score_1 }}
+		{{ form.instance.score_2 }}
+		{{ form.instance.score_3 }}
+		{{ form.instance.score_4 }}
+		{{ form.instance.score_5 }}
+		<br>
+		<br>
+		Export data as .CSV
+		<br>
+		<br>
+		THANKS FOR SLAMMING</p>
+
+		</div>
+
+	</div>
+</div>
+{% endblock content %}
