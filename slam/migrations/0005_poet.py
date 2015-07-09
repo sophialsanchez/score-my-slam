@@ -7,7 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('slam', '0003_judges_scores'),
+        ('slam', '0004_slam_session_poet'),
     ]
 
     operations = [
@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='Poet',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('round_1', models.ForeignKey(to='slam.Judges_scores')),
+                ('poet_name', models.CharField(max_length=200)),
             ],
         ),
     ]

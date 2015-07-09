@@ -7,12 +7,11 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('slam', '0001_initial'),
+        ('slam', '0002_remove_poet_slam_details'),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='slam_session',
-            name='date',
+        migrations.DeleteModel(
+            name='Poet',
         ),
     ]

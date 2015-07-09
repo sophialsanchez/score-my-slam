@@ -7,11 +7,19 @@ class Slam_session(models.Model):
 	slam_name = models.CharField(max_length=200)
 	number_of_rounds = models.IntegerField()
 	number_of_judges = models.IntegerField()
-	poet_1 = models.CharField(max_length=200)
-	poet_2 = models.CharField(max_length=200)
-	poet_3 =models.CharField(max_length=200)
+	poet = models.CharField(max_length=200)
+	
 	def __str__(self):
 		return self.slam_name
+
+
+class Poet(models.Model):
+	poet_name = models.CharField(max_length=200)
+#	slam_details = models.ForeignKey('Slam_session', null=True, blank=True)
+	
+	def __str__(self):
+		return self.poet_name
+
 
 class Judges_scores(models.Model):
 	score_1 = models.FloatField(max_length=50, validators = [MinValueValidator(0.0), MaxValueValidator(10.0)])
@@ -21,10 +29,6 @@ class Judges_scores(models.Model):
 	score_5 = models.FloatField(max_length=50, validators = [MinValueValidator(0.0), MaxValueValidator(10.0)])
 	
 	
-class Poet(models.Model):
-	round_1 = models.ForeignKey(Judges_scores, related_name='round_1')
-	round_2 = models.ForeignKey(Judges_scores, related_name='round_2')
-	round_3 = models.ForeignKey(Judges_scores, related_name='round_3')
 
 	
 	
