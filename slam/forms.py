@@ -13,7 +13,7 @@ class PoetForm(ModelForm):
 	class Meta:
 		model = Poet
 		fields = ['poet_name']
-#		exclude = ('slam_details',)
+		exclude = ('slam_details',)
 		
 		
 class JudgesForm(ModelForm):
@@ -21,8 +21,8 @@ class JudgesForm(ModelForm):
 		model = Judges_scores
 		fields = ['score_1', 'score_2', 'score_3', 'score_4', 'score_5']
 
-
-PoetFormset = formset_factory(PoetForm)
+        
+PoetFormset = formset_factory(PoetForm, extra=3)
 
 # class ResponseForm(forms.Form):
 # 	response = forms.CharField(widget=forms.TextInput(attrs={'autofocus': 'autofocus'}), label='Slam Name', max_length=150, error_messages={'required': 'Hmm...that doesn\'t look quite right. Try a different answer.'})

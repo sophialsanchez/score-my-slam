@@ -5,6 +5,7 @@
 <div class="start">
 		<div class="slam-form" id="slam-form">
 		<p class="create-slam-title">Create a Slam</p>
+		
 		<br>
 		<form id="createSlamForm" action="round/" method="post">
 		{% csrf_token %}
@@ -20,8 +21,9 @@
 							<td>{{ form }}</td>
 						</tr>
 					</tbody>
-				</table>
+				
 					{% endfor %}
+					</table>
 			</div>
 			{{ poets.management_form }}
 		<div>
@@ -32,9 +34,9 @@
 		<input type="submit" value="Let's get slamming!">
 		</p>
 		</form>
+		
 		</div>
 		<p id="start-slam-button">Start slam</p>
-
 	</div>
 	
 {% endblock content %}

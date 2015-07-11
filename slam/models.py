@@ -7,7 +7,6 @@ class Slam_session(models.Model):
 	slam_name = models.CharField(max_length=200)
 	number_of_rounds = models.IntegerField()
 	number_of_judges = models.IntegerField()
-	poet = models.CharField(max_length=200)
 	
 	def __str__(self):
 		return self.slam_name
@@ -15,7 +14,7 @@ class Slam_session(models.Model):
 
 class Poet(models.Model):
 	poet_name = models.CharField(max_length=200)
-#	slam_details = models.ForeignKey('Slam_session', null=True, blank=True)
+	slam_details = models.ForeignKey('Slam_session', null=True, blank=True, related_name='slam_session')
 	
 	def __str__(self):
 		return self.poet_name
