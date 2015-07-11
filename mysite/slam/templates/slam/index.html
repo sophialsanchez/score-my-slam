@@ -1,0 +1,56 @@
+{% extends 'slam/base.html' %}
+
+{% block content %}
+<div class="start">
+		<div class="slam-form" id="slam-form">
+		<p class="create-slam-title">Create a Slam</p>
+		<br>
+		<form action="round/" method="post">
+		{% csrf_token %}
+		<div class="poet-list">
+		<p>
+			{{ form.as_p }}
+		</div>
+		<div>
+			<div class="add-poet">add poet </div> | 
+			<div class="remove-poet">remove poet</div>
+		</div>
+
+		<input type="submit" value="Let's get slamming!">
+		</p>
+		</form>
+		</div>
+		<p id="start-slam-button">Start slam</p>
+
+	</div>
+
+
+{% endblock content %}
+
+<!-- 		
+		Slam Name: <input type="text" name="slam_name"><br>
+		Number of Rounds: <select>
+			<option value="1" name="number_of_rounds">1</option>
+			<option value="2" name="number_of_rounds">2</option>
+			<option value="3" name="number_of_rounds">3</option>
+			<option value="4" name="number_of_rounds">4</option>
+			</select>
+			<br>
+		Number of Judges: <select>
+			<option value="1" name="number_of_judges">1</option>
+			<option value="2" name="number_of_judges">2</option>
+			<option value="3" name="number_of_judges">3</option>
+			<option value="4" name="number_of_judges">4</option>
+			<option value="5" name="number_of_judges">5</option>
+			<option value="6" name="number_of_judges">6</option>
+			<option value="7" name="number_of_judges">7</option>
+			</select>
+			<br>
+		
+		<br>
+		<div class="poet-list">
+		<p class="1">Poet #1: <input type="text" name="poet_1"></p>
+		<p class="2">Poet #2: <input type="text" name="poet_2"></p>
+		<p class="3">Poet #3: <input type="text" name="poet_3"></p>
+		</div>
+-->
